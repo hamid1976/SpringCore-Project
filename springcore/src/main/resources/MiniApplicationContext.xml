@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="employee1" class="com.spiringcore.sapphireassignment.Employee">
+        <property name="empId" value="1" />
+        <property name="empName" value="Hamid" />
+        <property name="department" ref="department1" />
+        <property name="project">
+            <list>
+                <ref bean="project1" />
+                <ref bean="project2" />
+            </list>
+        </property>
+    </bean>
+
+    <bean id="employee2" class="com.spiringcore.sapphireassignment.Employee">
+        <property name="empId" value="2" />
+        <property name="empName" value="Jamal" />
+        <property name="department" ref="department2" />
+        <property name="project">
+            <list>
+                <ref bean="project2" />
+                <ref bean="project3" />
+            </list>
+        </property>
+    </bean>
+
+    <bean id="employee3" class="com.spiringcore.sapphireassignment.Employee">
+        <property name="empId" value="3" />
+        <property name="empName" value="AHSAN" />
+        <property name="department" ref="department1" />
+        <property name="project">
+            <list>
+                <ref bean="project1" />
+                <ref bean="project2" />
+            </list>
+        </property>
+    </bean>
+
+    <bean id="employee4" class="com.spiringcore.sapphireassignment.Employee">
+        <property name="empId" value="4" />
+        <property name="empName" value="YASIR" />
+        <property name="department" ref="department2" />
+        <property name="project">
+            <list>
+                <ref bean="project2" />
+                <ref bean="project3" />
+            </list>
+        </property>
+    </bean>
+
+
+    <bean id="department1" class="com.spiringcore.sapphireassignment.Department">
+        <property name="deptId" value="1" />
+        <property name="deptName" value="Information Technology" />
+        <property name="employee">
+            <list>
+                <ref bean="employee1" />
+                <ref bean="employee2" />
+                <ref bean="employee3" />
+                <ref bean="employee4" />
+            </list>
+        </property>
+        <property name="project">
+            <list>
+                <ref bean="project1" />
+                <ref bean="project2" />
+                <ref bean="project3" />
+            </list>
+        </property>
+    </bean>
+
+    <bean id="department2" class="com.spiringcore.sapphireassignment.Department">
+        <property name="deptId" value="2" />
+        <property name="deptName" value="Softwear Engineering" />
+        <property name="employee">
+            <list>
+                <ref bean="employee1" />
+                <ref bean="employee2" />
+                <ref bean="employee3" />
+                <ref bean="employee4" />
+            </list>
+        </property>
+        <property name="project">
+            <list>
+                <ref bean="project1" />
+                <ref bean="project2" />
+                <ref bean="project3" />
+            </list>
+        </property>
+    </bean>
+
+    <bean id="project1" class="com.spiringcore.sapphireassignment.Project">
+        <property name="projectId" value="1" />
+        <property name="projectName" value="Usindh" />
+        <property name="employee">
+            <list>
+                <ref bean="employee1" />
+                <ref bean="employee2" />
+                <ref bean="employee3" />
+                <ref bean="employee4" />
+            </list>
+        </property>
+    </bean>
+
+    <bean id="project2" class="com.spiringcore.sapphireassignment.Project">
+        <property name="projectId" value="2" />
+        <property name="projectName" value="Library" />
+        <property name="employee">
+            <list>
+                <ref bean="employee1" />
+                <ref bean="employee2" />
+                <ref bean="employee3" />
+                <ref bean="employee4" />
+            </list>
+        </property>
+    </bean>
+
+    <bean id="project3" class="com.spiringcore.sapphireassignment.Project">
+        <property name="projectId" value="3" />
+        <property name="projectName" value="Admission" />
+        <property name="employee">
+            <list>
+                <ref bean="employee2" />
+                <ref bean="employee3" />
+                <ref bean="employee4" />
+            </list>
+        </property>
+    </bean>
+
+    <bean id="employee5" class="com.spiringcore.sapphireassignment.Employee">
+        <constructor-arg value="1"/>
+        <constructor-arg value="AHSAN"/>
+    </bean>
+</beans>

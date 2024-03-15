@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd
+           http://www.springframework.org/schema/util
+           http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+        <bean class ="com.spiringcore.ci.Certi" name="cer" c:name="Java is Middle Level Language">
+<!--        <constructor-arg value="Android Using Kotlin"/>-->
+        </bean>
+
+<!--        <bean class="com.spiringcore.ci.Person" name="person">-->
+<!--            <constructor-arg value="Hamid"/>-->
+<!--            <constructor-arg value="12142354" type="int"/>-->
+<!--            <constructor-arg ref="cer"/>-->
+<!--        </bean>-->
+
+        <bean class="com.spiringcore.ci.Person" name="person" c:name="Uzair" c:personId="1214683">
+            <constructor-arg name="list">
+                <list>
+                    <value>03163124966</value>
+                    <value>03163124958</value>
+                    <value>03332664869</value>
+                </list>
+            </constructor-arg>
+            <constructor-arg ref="cer"/>
+        </bean>
+
+        <bean class="com.spiringcore.ci.Addition" name="add">
+            <constructor-arg value="12" type="int" index="1"/>
+            <constructor-arg value="8"  type="int" index="0"/>
+        </bean>
+
+</beans>
+
+

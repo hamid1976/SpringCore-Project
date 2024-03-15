@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd
+           http://www.springframework.org/schema/util
+           https://www.springframework.org/schema/util/spring-util.xsd">
+
+            <context:component-scan base-package="com.spiringcore.spel"/>
+
+
+
+    <!-- Your bean definitions go here -->
+
+    <!--    <bean class="com.springcore.Student" name="student1" p:studentId="1" p:studentName="ahsan" p:studentAddress="mumbai"/>-->
+    <!--    <bean class="com.springcore.Student" name="student2" p:studentId="2" p:studentName="hamid" p:studentAddress="hyderabad"/>-->
+
+
+    <!--            Using Arrray Class Emp-->
+    <!--        <bean class="com.spiringcore.collections.Emp" name="emp1">-->
+    <!--            <property name="name" value="UZAIR" />-->
+
+    <!--            <property name="phones">-->
+    <!--                <list>-->
+    <!--                    <value>03163124966</value>-->
+    <!--                    <value>03163124958</value>-->
+    <!--                    <value>03332664869</value>-->
+    <!--                    <null/>-->
+    <!--                </list>-->
+    <!--            </property>-->
+
+    <!--            <property name="adressess">-->
+    <!--                <set>-->
+    <!--                    <value>HYD</value>-->
+    <!--                    <value>KHI</value>-->
+    <!--                    <value>DADU</value>-->
+    <!--                </set>-->
+    <!--            </property>-->
+
+    <!--            <property name="courses">-->
+    <!--                <map>-->
+    <!--                    <entry key="java" value="2 year" />-->
+    <!--                    <entry key="python" value="1 month" />-->
+    <!--                    <entry key="c" value="1 year" />-->
+    <!--                </map>-->
+    <!--            </property>-->
+
+    <!--            <property name="props">-->
+    <!--                <props>-->
+    <!--                    <prop key="name">Hamid</prop>-->
+    <!--                    <prop key="channelName">Code With Hamid</prop>-->
+    <!--                </props>-->
+    <!--            </property>-->
+    <!--        </bean>-->
+    <!--            end emp all array-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</beans>
+
+
